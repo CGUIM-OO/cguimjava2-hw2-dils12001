@@ -8,7 +8,7 @@ import java.util.Scanner;
  * ID: TODO: please add student ID here (5 points)
  * Name: TODO: please add student name here (5 points)
  * Try to write some comments for your codes (methods, 15 points)
- * B0544242 葉明瑋 這是一個把卡片PRINT出來的程式
+ * B0544242 葉明瑋 這是一個把卡片PRINT出來的程式..........
  */
 public class HW2 {
 
