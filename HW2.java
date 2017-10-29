@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-
-/**
- * @author TODO: please add student ID and name here
+/*
+ * ID: TODO: please add student ID here (5 points)
+ * Name: TODO: please add student name here (5 points)
  * Try to write some comments for your codes (methods, 15 points)
  */
 public class HW2 {
@@ -24,11 +24,8 @@ public class HW2 {
 			System.out.println("Error, please check your sourse code");
 		}
 	}
-	/**
+	/*
 	 * This method is used for checking your result, not a part of your HW2
-	 * @param allCards 所有的牌
-	 * @param nDeck 總共有幾副牌
-	 * @return
 	 */
 	private static boolean isAllCardsCorrect(ArrayList<Card> allCards,int nDeck){
 		//check the output 
@@ -63,7 +60,7 @@ public class HW2 {
 	}
 
 }
-/**
+/*
  * Description: TODO: please add description here
  */
 class Deck{
@@ -89,16 +86,12 @@ class Deck{
 		return cards;
 	}
 }
-/**
+/*
  * Description: TODO: please add description here
  */
 class Card{
 	private int suit; //Definition: 1~4, Clubs=1, Diamonds=2, Hearts=3, Spades=4
 	private int rank; //1~13
-	/**
-	 * @param s suit
-	 * @param r rank
-	 */
 	public Card(int s,int r){
 		suit=s;
 		rank=r;
