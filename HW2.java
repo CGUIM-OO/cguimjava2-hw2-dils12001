@@ -74,7 +74,13 @@ class Deck{
 		//Card card=new Card(1,1); ->means new card as clubs ace
 		//cards.add(card);
 		//Sample code end
-
+		for(int x = 1; x <= 4; x++){
+			for(int y = 1; y <= 13;y++){
+				Card card=new Card(k
+			
+			
+			}
+		}
 	}	
 	//TODO: Please implement the method to print all cards on screen (10 points)
 	public void printDeck(){
@@ -99,6 +105,18 @@ class Card{
 	//TODO: 1. Please implement the printCard method (20 points, 10 for suit, 10 for rank)
 	public void printCard(){
 		//Hint: print (System.out.println) card as suit,rank, for example: print 1,1 as Clubs Ace
+		if (suit == 1)
+			System.out.print("Clubs ");
+		if (suit == 2)
+			System.out.print("Diamonds ");
+		if (suit == 3)
+			System.out.print("Hearts ");
+		if (suit == 4)
+			System.out.print("Spades ");
+		if (rank == 1)
+			System.out.print("Ace");
+		else
+			System.out.print(rank);
 
 	}
 	public int getSuit(){
