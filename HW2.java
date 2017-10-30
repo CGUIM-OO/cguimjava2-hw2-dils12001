@@ -69,7 +69,8 @@ public class HW2 {
 }
 
 /*
- * Description: TODO: please add description here
+ * Description: TODO: please add description here 有 nDeck 副牌,進去跑 nDeck 次 ;有 4(x)
+ * 個花色,進去跑 4(x) 次;有 13(y) 個rank,進去跑 13(y) 次; 每次new 一個 card,add進cards的ArrayList
  */
 class Deck {
 	private ArrayList<Card> cards;
@@ -83,6 +84,7 @@ class Deck {
 		// Card card=new Card(1,1); ->means new card as clubs ace
 		// cards.add(card);
 		// Sample code end
+
 		for (int i = 1; i <= nDeck; i++) {
 			for (int x = 1; x <= 4; x++) {
 				for (int y = 1; y <= 13; y++) {
@@ -95,13 +97,14 @@ class Deck {
 
 	// TODO: Please implement the method to print all cards on screen (10
 	// points)
+
 	public void printDeck() {
 		// Hint: print all items in ArrayList<Card> cards,
 		// TODO: please implement and reuse printCard method in Card class (5
 		// points)
-for(int i = 0;i < cards.size();i++){
-	cards.get(i).printCard();
-}
+		for (int i = 0; i < cards.size(); i++) {
+			cards.get(i).printCard();
+		}
 	}
 
 	public ArrayList<Card> getAllCards() {
@@ -110,7 +113,7 @@ for(int i = 0;i < cards.size();i++){
 }
 
 /*
- * Description: TODO: please add description here
+ * Description: TODO: please add description here 呼叫這個method可以把卡片print出來
  */
 class Card {
 	private int suit; // Definition: 1~4, Clubs=1, Diamonds=2, Hearts=3,
@@ -127,31 +130,41 @@ class Card {
 	public void printCard() {
 		// Hint: print (System.out.println) card as suit,rank, for example:
 		// print 1,1 as Clubs Ace
-		String card = null;
 		switch (suit) {
 		case 1:
-			if (rank == 1)
-				System.out.println("Clubs "+"Ace");
-			else
-				System.out.println("Clubs "+rank);
+			if (rank == 1) {
+				System.out.println("Clubs " + "Ace");
+				break;
+			} else {
+				System.out.println("Clubs " + rank);
+				break;
+			}
 		case 2:
-			if (rank == 1)
-				System.out.println("Diamonds "+"Ace");
-			else
-				System.out.println("Diamonds "+rank);
+			if (rank == 1) {
+				System.out.println("Diamonds " + "Ace");
+				break;
+			} else {
+				System.out.println("Diamonds " + rank);
+				break;
+			}
 		case 3:
-			if (rank == 1)
-				System.out.println("Hearts "+"Ace");
-			else
-				System.out.println("Hearts "+rank);
+			if (rank == 1) {
+				System.out.println("Hearts " + "Ace");
+				break;
+			} else {
+				System.out.println("Hearts " + rank);
+				break;
+			}
 		case 4:
-			if (rank == 1)
-				System.out.println("Spades "+"Ace");
-			else
-				System.out.println("Spades "+rank);
+			if (rank == 1) {
+				System.out.println("Spades " + "Ace");
+				break;
+			} else {
+				System.out.println("Spades " + rank);
+				break;
+			}
 		}
-		
-			
+
 	}
 
 	public int getSuit() {
